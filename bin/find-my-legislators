@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "./lib/find_my_legislators"
+
+FindMyLegislators::CLI.new.call
