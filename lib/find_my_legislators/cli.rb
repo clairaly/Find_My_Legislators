@@ -12,6 +12,8 @@ class FindMyLegislators::CLI
     puts 'Gimme your zip code!'
     get_input
     @legislators = FindMyLegislators::Legislators
+    @legislators.all.each_with_index do |leg, index|
+      puts "#{index + 1}. #{leg.name} - #{leg.party} - #{leg.home} - #{leg.district}"
   end
 
   def get_input
@@ -24,12 +26,10 @@ class FindMyLegislators::CLI
     while input != "exit"
       puts "Enter the number of the legislator you would like more information on, type list to go back to menu, or type exit."
     input = gets.strip.downcase
-    case input
-    when "1"
-      puts "More info on your Rep.."
-    when "2"
-      puts "More info on your Senator..."
-    when "list"
+    if input.to_i > 0
+      the_legs = @legislators[input.to_i-1]
+      puts "#{index + 1}. #{leg.name} - #{leg.party} - #{leg.home} - #{leg.district}"
+    elsif input == "list"
       list_legislators
     else
       puts "Not sure what you are looking for, please type list or exit."
