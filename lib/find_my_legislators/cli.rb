@@ -9,11 +9,12 @@ class FindMyLegislators::CLI
 
   def list_legislators
     puts "Welcome to Find My Legislators:"
+    puts "--------------------------------"
     puts 'Gimme your zip code!'
     get_input
-    @legislators = FindMyLegislators::Legislators
+    @legislators = FindMyLegislators::Legislators.legislators
     @legislators.all.each_with_index do |leg, index|
-      puts "#{index + 1}. #{leg.name} - #{leg.party} - #{leg.home} - #{leg.district}"
+    puts "#{index + 1}. #{leg.name} - #{leg.party} - #{leg.home} - #{leg.district}"
   end
 
   def get_input
@@ -41,4 +42,5 @@ class FindMyLegislators::CLI
     puts "Thank you for taking the time to learn more about your legislative branch."
   end
 
+end
 end
