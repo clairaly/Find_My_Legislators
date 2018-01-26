@@ -1,8 +1,6 @@
 # FindMyLegislators
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/find_my_legislators`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to your new gem! Here you can find out who represents you in Congress by searching our database by your zip-code.To get started, simply enter your zip code. You will be presented with little mini biography and your representatives' contact information as well as links to various other information regarding your politician.
 
 ## Installation
 
