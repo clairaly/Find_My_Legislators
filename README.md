@@ -1,6 +1,6 @@
 # FindMyLegislators
 
-Welcome to your new gem! Here you can find out who represents you in Congress by searching our database by your zip-code.To get started, simply enter your zip code. You will be presented with little mini biography and your representatives' contact information as well as links to various other information regarding your politician.
+Welcome to your new gem! Here you can find out who represents you in Congress by searching our database using your zip-code. To get started, simply enter your zip code. You will then be presented with the legislators that represent you, their party affiliations, as well as links to various other information regarding your Legislators.
 
 ## Installation
 
